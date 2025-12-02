@@ -1,0 +1,93 @@
+/* Hide User Login Button */
+body.local-only-mode .comfy-user-selection,
+body.local-only-mode .comfy-user-menu,
+body.local-only-mode [title="User"],
+body.local-only-mode .pi-user {
+    display: none !important;
+}
+
+/* Hide Templates Sidebar */
+/* Based on templates-html.txt: <nav class="w-1/3 min-w-40 max-w-56"> containing "Templates" */
+body.local-only-mode nav.w-1\/3.min-w-40.max-w-56,
+body.local-only-mode .comfy-menu-templates,
+body.local-only-mode [data-v-4ebc4d9c] nav.w-1\/3 {
+    display: none !important;
+}
+
+/* Templates Popup: Hide known API templates */
+div[data-testid*="api_"],
+div[data-testid*="openai"],
+div[data-testid*="gemini"],
+div[data-testid*="sora"],
+div[data-testid*="vidu"],
+div[data-testid*="wan"],
+div[data-testid*="minimax"],
+div[data-testid*="runway"],
+div[data-testid*="luma"],
+div[data-testid*="kling"],
+div[data-testid*="hailuo"],
+div[data-testid*="topaz"],
+div[data-testid*="bytedance"],
+div[data-testid*="ltxv"],
+div[data-testid*="stability_ai"] {
+    display: none !important;
+}
+
+/* Hide "API Node" category in context menu if possible via CSS (unlikely but worth a shot) */
+/* Hide User Login Button */
+body.local-only-mode .comfy-user-selection,
+body.local-only-mode .comfy-user-menu,
+body.local-only-mode [title="User"],
+body.local-only-mode .pi-user {
+    display: none !important;
+}
+
+/* Hide Templates Sidebar */
+/* Based on templates-html.txt: <nav class="w-1/3 min-w-40 max-w-56"> containing "Templates" */
+body.local-only-mode nav.w-1\/3.min-w-40.max-w-56,
+body.local-only-mode .comfy-menu-templates,
+body.local-only-mode [data-v-4ebc4d9c] nav.w-1\/3 {
+    display: none !important;
+}
+
+/* Templates Popup: Hide known API templates */
+div[data-testid*="api_"],
+div[data-testid*="openai"],
+div[data-testid*="gemini"],
+div[data-testid*="sora"],
+div[data-testid*="vidu"],
+div[data-testid*="wan"],
+div[data-testid*="minimax"],
+div[data-testid*="runway"],
+div[data-testid*="luma"],
+div[data-testid*="kling"],
+div[data-testid*="hailuo"],
+div[data-testid*="topaz"],
+div[data-testid*="bytedance"],
+div[data-testid*="ltxv"],
+div[data-testid*="stability_ai"] {
+    display: none !important;
+}
+
+/* Hide "API Node" category in context menu if possible via CSS (unlikely but worth a shot) */
+body.local-only-mode .litegraph .litemenu-entry[data-value="API Node"],
+body.local-only-mode .litegraph .litemenu-entry:has(span:contains("API Node")) {
+    display: none !important;
+}
+
+/* Hide Partner Nodes in Templates Sidebar (Backup) */
+/* Hide "Partner Nodes" in Templates Sidebar (Fallback) */
+body.local-only-mode nav .flex.cursor-pointer:has(.icon-\[lucide--handshake\]) {
+    display: none !important;
+}
+
+/* Hide "User" Tab in Settings Sidebar */
+body.local-only-mode .p-dialog .p-listbox-option[aria-label="User"] {
+    display: none !important;
+}
+
+/* Hide "API Nodes" Section in Settings */
+/* Uses :has() to select the parent group containing the specific API setting ID */
+body.local-only-mode .setting-group:has(#Comfy\.NodeBadge\.ShowApiPricing) {
+    display: none !important;
+}
